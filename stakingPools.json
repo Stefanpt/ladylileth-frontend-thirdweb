@@ -1,0 +1,17 @@
+{
+    "Pool":{
+        "title": "The Pool",
+        "description": "Pariatur esse laboris commodo aute duis duis pariatur eu ipsum deserunt. Aute enim dolor laboris eu laboris et labore sint excepteur dolore occaecat enim officia. Eu consequat sit ea aliqua pariatur laboris dolor ut irure non ea id deserunt id. Minim nostrud in minim proident adipisicing nisi ea duis id ad. Duis cillum ex mollit occaecat veniam sint ullamco ullamco adipisicing ullamco in nulla est. Culpa adipisicing proident exercitation cupidatat dolore consectetur deserunt reprehenderit proident aute ad ullamco laboris.",
+        "reward": "20 VI$E per day"
+    },
+    "Sauna":{
+        "title": "The Sauna",
+        "description": "Pariatur esse laboris commodo aute duis duis pariatur eu ipsum deserunt. Aute enim dolor laboris eu laboris et labore sint excepteur dolore occaecat enim officia. Eu consequat sit ea aliqua pariatur laboris dolor ut irure non ea id deserunt id. Minim nostrud in minim proident adipisicing nisi ea duis id ad. Duis cillum ex mollit occaecat veniam sint ullamco ullamco adipisicing ullamco in nulla est. Culpa adipisicing proident exercitation cupidatat dolore consectetur deserunt reprehenderit proident aute ad ullamco laboris.",
+        "reward": "BOM NFT Raffle"
+    },
+    "Steam_Room":{
+        "title": "The Steam Room",
+        "description": "Pariatur esse laboris commodo aute duis duis pariatur eu ipsum deserunt. Aute enim dolor laboris eu laboris et labore sint excepteur dolore occaecat enim officia. Eu consequat sit ea aliqua pariatur laboris dolor ut irure non ea id deserunt id. Minim nostrud in minim proident adipisicing nisi ea duis id ad. Duis cillum ex mollit occaecat veniam sint ullamco ullamco adipisicing ullamco in nulla est. Culpa adipisicing proident exercitation cupidatat dolore consectetur deserunt reprehenderit proident aute ad ullamco laboris.",
+        "reward": "Portrait Raffle"
+    }
+}

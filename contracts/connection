@@ -1,0 +1,5 @@
+    const ERC721Interface = new utils.Interface(erc721.abi)
+
+    const collectionAddress = chainId ? networkMapping[String(chainId)]["Collection"][0] : constants.AddressZero
+
+    const collectionContract = new Contract(collectionAddress, ERC721Interface)

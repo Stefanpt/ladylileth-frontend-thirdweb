@@ -1,0 +1,43 @@
+{
+    "5777": {
+      "Collection": [
+        "0x33eBE52A8E0c36d813e9C3c5FC4Eecee40122c86"
+      ]
+    },
+    "0": {
+      "Collection": [
+        "0x07EfDeDeBd5907C6cEaAAe8b66CD8b6B6643405A"
+      ],
+      "Token": [
+        "0xf0098099448dBFc7dd9FcA0D53b9B7b598403ADF"
+      ],
+      "Staking": [
+        "0x0C9C89FF07658c8F6fcD1ec85aDA5472AC228c80"
+      ]
+    },
+    "4": {
+      "Collection": [
+        "0x3a4D6F8DAaEBaB720efeAAB89e52D0b6316a3996"
+      ],
+      "Token": [
+        "0x20f3F6192AF5C0D8e3129599aDD5935689D963F4"
+      ],
+      "Staking": [
+        "0xc2FEdB616e438Bf8ce4Cb08050c21fb99536A8Bc"
+      ]
+    },
+    "5": {
+      "Collection": [
+        "0x0f1334C85274536dbfB7A21117f53487f755F6bb"
+      ],
+      "Token": [
+        "0x5d6c64d462945B0E17415e37F3CbCe5e42A60Fb5"
+      ],
+      "Staking": [
+        "0xB37D1f7EeEd59055C6d8F22E6Ec321cf85Be930D"
+      ],
+      "GenesisBoulevard": [
+        "0x029500d9D5B0b3797C5D59676eF173455fc1d5bA"
+      ]
+    }
+  }

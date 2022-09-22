@@ -1,0 +1,78 @@
+        <Modal 
+        isOpen={isOpen} 
+        onClose={handleModalClose} 
+        size="xl" 
+        isCentered
+        >
+          <ModalOverlay />
+          <ModalContent bg="black" p={5}>
+            <ModalHeader
+            textAlign="center" 
+            textTransform="uppercase"
+            color="brand.green"
+            fontSize='3xl'
+            >
+              Stake Lileth in {modalInfo && modalInfo.title}
+            </ModalHeader>
+            <ModalCloseButton color="white"/>
+            <ModalBody color="white">
+
+              <Flex flexDirection="column">
+
+                <Center mb="6">
+                  {modalInfo.description}
+                </Center>
+
+                <Grid templateColumns='repeat(2, 1fr)' gap={6}>
+                  {/* Stakeable IDs */}
+                  <GridItem w='100%'>
+                    <Text textTransform="uppercase">Current Stakers: </Text>
+                    <Select 
+                    placeholder='Select token ID'
+                    onChange={handleStakeIdChange}
+                    mt="2"
+                    >
+                      {
+                        stakeIds && stakeIds.map(id => 
+                          <option key={id} value={id}>{id.toNumber()}</option>
+                          )
+                        }
+                    </Select>
+                    {approved ? 
+                      <Button onClick={()=>handleStake()} mt="4" variant="secondary" borderColor="brand.green" color="brand.green" w="100%">
+                        Stake
+                      </Button>
+                      :
+                      <Button onClick={()=>approve()} mt="4" variant="secondary" borderColor="brand.green" color="brand.green" w="100%">
+                        Approve
+                      </Button>
+                    }
+                  </GridItem>
+
+                  {/* Withdrawable IDs */}
+                  <GridItem w='100%'>
+                    <Text textTransform="uppercase">Reward: {modalInfo.reward}</Text>
+                    <Select 
+                    placeholder='Select token ID'
+                    onChange={handleWithdrawIdChange}
+                    mt="2"
+                    >
+                      {
+                        withdrawIds && withdrawIds.map(id => 
+                          <option key={id} value={id}>{id.toNumber()}</option>
+                        )
+                      }
+                    </Select>
+                    <Button onClick={()=>handleWithdraw()} mt="4" variant="secondary" borderColor="brand.pink" color="brand.pink" w="100%">
+                      Unstake
+                    </Button>
+                  </GridItem>
+                </Grid>
+
+              </Flex>
+
+            </ModalBody>
+  
+            <ModalFooter></ModalFooter>
+          </ModalContent>
+        </Modal>
