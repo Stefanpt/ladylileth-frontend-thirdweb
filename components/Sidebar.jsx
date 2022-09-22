@@ -39,7 +39,8 @@ import {
     useOwnedNFTs,
     useNFTs, 
     ThirdwebNftMedia,
-    getContractFromAbi
+    getContractFromAbi,
+    useSDK
 } from "@thirdweb-dev/react";
 import token from '../contracts/ViseCoin.json'
 
@@ -49,26 +50,25 @@ export default function Sidebar() {
     // FROM HERE IM EXPERIMENTING AND TRYING TO GET AN INTERACTION WITH THE CONTRACT
     const sdk = useSDK();
 
-    const contract = sdk.get_contract(
-        "0x5d6c64d462945B0E17415e37F3CbCe5e42A60Fb5"
-    );
-    
-    const balance = () => {
-        console.log(contract?.call("balance"));
+    const contract = async() => {
+        return await sdk.getContract(
+            "0x5d6c64d462945B0E17415e37F3CbCe5e42A60Fb5"
+        );
     }
-    balance()
-    useEffect(() => {
-        console.log(contract)
-    }, [contract]);
+    
+    const { data, isLoading } = useContractRead(contract(), "name");
+    // useEffect(() => {
+    //     console.log(contract)
+    // }, [contract]);
     useEffect(() => {
         console.log('contract data:',data)
     }, [data]);
-    useEffect(() => {
-        console.log('loading:',isLoading)
-    }, [isLoading]);
-    useEffect(() => {
-        console.log('error:',error)
-    }, [error]);
+    // useEffect(() => {
+    //     console.log('loading:',isLoading)
+    // }, [isLoading]);
+    // useEffect(() => {
+    //     console.log('error:',error)
+    // }, [error]);
     // ---------
 
     
